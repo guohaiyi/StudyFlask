@@ -1,0 +1,16 @@
+{% extends 'base/base_home.html' %}
+
+{% block main %}
+    这个是DATA
+    <hr>
+    {% if user and user.age > 16 %}
+        <a href="#">{{ user.name }}</a>
+        <a href="#"> 注销 </a>
+    {% else %}
+        <a href="login.html"> 登录 </a>
+        <a href="#"> 注销 </a>
+    {% endif %}
+    <a href="{{ url_for('book')}}">显示书名</a>
+    <a href="{{ url_for('img')}}">显示图片</a>
+     <a href="{{ url_for('img')}}">显示评论</a>
+{% endblock %}

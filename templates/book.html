@@ -1,0 +1,23 @@
+{% extends 'base/base_home.html' %}
+
+{% block title %}显示书名{% endblock %}
+
+{% block main %}
+    <table>
+        <thead>
+        <th> 书名</th>
+        <th> 作者</th>
+        <th> 价格</th>
+        </thead>
+        <tbody>
+        {% for for_data in for_data %}
+            <tr>
+                <td>{{ for_data.name }}</td>
+                <td>{{ for_data.u_name }}</td>
+                <td>{{ for_data.pers }}</td>
+                <hr>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

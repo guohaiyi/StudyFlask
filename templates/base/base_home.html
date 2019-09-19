@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/base_demo.css">
+</head>
+<body>
+<div class="nav">
+    <ul>
+        <li><a href="#">
+            <script src="/static/js/base_demo.js"></script>
+            首页</a></li>
+        <li><a href="#">发布说说</a></li>
+    </ul>
+</div>
+{% block main %}{% endblock %}
+</body>
+</html>
